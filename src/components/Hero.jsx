@@ -1,18 +1,24 @@
 import { ArrowRightCircle, UsersRound, Wallet } from "lucide-react";
-import React from "react";
 import { Link } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className="w-full flex justify-center items-center bg-gray-100 h-screen">
-      <main className="max-w-[1400px] w-full m-auto flex justify-center items-center px-10  py-4 h-full">
+    <section className="w-full flex justify-center items-center bg-gray-100 h-[calc(100vh-70px)] relative">
+      <div
+        className="absolute inset-0 z-0 opacity-20 lg:hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/hero-img-3.png')" }}
+      >
+        {/* Optional: Add a gradient overlay to make it even more subtle */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-100 via-transparent to-slate-900" />
+      </div>
+      <main className="max-w-[1400px] w-full m-auto flex justify-center items-center px-10  py-4 h-full z-20">
         {/* Right side of hero section */}
         <article className="w-full lg:w-1/2 h-full flex justify-center items-start flex-col">
-          <div className="p-3 rounded-full bg-white w-[350px] text-center overflow-hidden">
+          <div className="hidden lg:block p-3 rounded-full bg-white w-[350px] text-center overflow-hidden">
             <p>Your Premium Car Detailing Service Provider</p>
           </div>
           <p className="text-gray-900 font-bold text-[40px]">
-            <span className="text-blue-500">Expert</span> Car Detailing Services
+            <span className="text-blue-700">Expert</span> Car Detailing Services
             Provider
           </p>
           <p className="text-md text-gray-600 w-[60%]">
