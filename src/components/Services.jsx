@@ -6,14 +6,14 @@ import ServicesCard from "./ServicesCard";
 function Services() {
   return (
     <section className="w-full flex flex-col justify-center items-center bg-gray-100 min-h-screen">
-      <main className="max-w-[1400px] w-full m-auto flex flex-col justify-start items-center px-10  py-7">
+      <main className="max-w-[1400px] w-full m-auto flex flex-col justify-start items-center px-10 h-auto py-7">
         <h2 className="text-blue-500 text-xl w-full">OUR SERVICES</h2>
         <p className="w-full font-bold text-gray-900 text-3xl mt-3 ">
           Discover Our{" "}
           <span className="text-blue-700">Car Detailing Services</span>
         </p>
       </main>
-      <article className="grid w-full grid-cols-[repeat(auto-fit,minmax(300px,1fr))]  gap-10 justify-start items-start px-10 py-7">
+      <article className="grid w-full grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-10 justify-center items-center px-10 py-7">
         <ServicesCard
           src={"/hero-img-1.png"}
           icon={Car}

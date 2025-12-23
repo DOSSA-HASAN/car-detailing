@@ -2,7 +2,7 @@ import React from "react";
 
 function ServicesCard({ src, icon: Icon, title, text }) {
   return (
-    <main className="w-[80%] h-[350px]  flex flex-col justify-start items-start rounded-xl shadow-md overflow-hidden bg-white shadow-blue-900">
+    <main className="min-w-[80%] max-w-full h-[350px]  flex flex-col justify-start items-start rounded-xl shadow-md overflow-hidden bg-white shadow-blue-900">
       <img src={src} alt="" className="w-full object-cover h-1/2" />
       <div className="flex flex-col justify-between items-start relative p-5 z-10 bg-transparent h-min-content bg-red-500">
         {Icon && (
