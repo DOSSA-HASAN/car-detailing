@@ -27,13 +27,13 @@ const steps = [
 
 function Process() {
   return (
-    <section className="w-full bg-gray-50 py-20 px-10">
+    <section className="w-full bg-gray-50 py-20 px-10 bg-gray-100">
       <div className="max-w-[1200px] mx-auto">
         <header className="text-center mb-16">
           <h2 className="text-blue-500 font-bold tracking-widest text-sm uppercase">
             Our Work Process
           </h2>
-          <p className="text-3xl font-black text-gray-900 mt-2">
+          <p className="text-3xl font-bold text-gray-900 mt-2">
             How We Get Your Car <span className="text-blue-700">Perfect</span>
           </p>
         </header>
